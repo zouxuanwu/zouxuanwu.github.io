@@ -53,13 +53,7 @@ coursepath/README.md
 ## Scoring Model (Simplified)
 
 Each course combination is scored using a weighted linear model:
-Score =
-w1 · interest_alignment
-w2 · major_progress
-w3 · workload_balance
-w4 · teaching_quality
-w5 · schedule_quality
-w6 · breadth_coverage
+Score = w1 · interest_alignment + w2 · major_progress + w3 · workload_balance + w4 · teaching_quality + w5 · schedule_quality + w6 · breadth_coverage
 
 Weights are adjustable and designed to be interpretable rather than opaque.
 
