@@ -27,13 +27,10 @@ At its core, CoursePath models academic planning as a constraint-based optimizat
 Semantic topic tags (e.g. genomics, statistics, programming) allow the system to align course recommendations with evolving academic interests and career goals such as bioinformatics, finance, or research.
 
 # Project Architecture
-coursepath/
-├── planner.py # Core planning logic
-├── data/
-│ └── courses.json # Normalized course dataset
-├── examples/
-│ └── sample_output.txt
-└── README.md
+coursepath/planner.py # Core planning logic
+coursepath/data/courses.json # Normalized course dataset
+coursepath/examples/sample_output.txt
+coursepath/README.md
 
 # Current Features
 
