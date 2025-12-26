@@ -58,7 +58,7 @@ Score = w1 · interest_alignment + w2 · teaching_quality + w3 · course difficu
 
 Weights are adjustable and designed to be interpretable rather than opaque.
 
-# Building Weighted Topic Representation
+# Building Weighted Topic Representation and Interest Profile
 
 Instead of modeling course topics as binary labels, this project represents each course using a weighted topic distribution. Each topic weight reflects the relative instructional emphasis of the course and the weights for a course approximately sum to 1.
 
@@ -164,7 +164,6 @@ Engineering is intentionally separated from physics and math to preserve semanti
 
 For the tag design, topic overlap is expected and intentional. Each tag represents a different dimension of skill, not a mutually exclusive category. Because weights are normalized, scoring is linear, and combinations are evaluated holistically, overlap does not inflate scores unfairly. Instead, it reflects multidisciplinary richness, which is precisely what a four-year academic planner should reward.
 
-#Interactively Building Interest Profiles
 The program lets users build a personalized interest profile interactively, which guides course recommendations. It first collects all available topics from the course dataset, then prompts the user to rate their interest in each topic on a scale (e.g., 0.0–1.0). These ratings are stored in a dictionary and used to score semester plans, prioritizing courses that match the user’s preferences. This approach ensures flexibility, personalization, and automatic support for new topics without manual updates.
 
 # Disclaimer
