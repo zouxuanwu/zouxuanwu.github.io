@@ -7,8 +7,15 @@ def load_courses():
 
 courses = load_courses()
 
-def prereqs_met(course_name, completed):
-    return all(prereq in completed for prereq in courses[course_name]["prereqs"])
+def check_requirements(requirements, taken_courses):
+    if isinstance(requirements, str):
+        return requirements in taken_courses
+    elif "and" in requirements:
+        return all(check_requirements(r, taken_courses) for r in requirements["and"])
+    elif "or" in requirements:
+        return any(check_requirements(r, taken_courses) for r in requirements["or"])
+    else:
+        raise ValueError("Unknown requirement format")
   
 def valid_schedule(schedule, min_units=8, max_units=12):
     total_units = 0
