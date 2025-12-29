@@ -1,4 +1,4 @@
-import json
+import json; d=json.load(open("courses_list.json")); json.dump({c.pop("course_id"): c for c in d}, open("courses.json","w"), indent=2)
 from itertools import combinations
 
 def load_courses():
