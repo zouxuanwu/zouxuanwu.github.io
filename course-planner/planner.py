@@ -1,4 +1,6 @@
-import json; courses = {c["course_id"]: {k:v for k,v in c.items() if k!="course_id"} for c in json.load(open("courses.json"))}
+import json
+with open("courses.json") as f:
+    courses = json.load(f)
 from itertools import combinations
 
 def check_requirements(requirements, taken_courses):
