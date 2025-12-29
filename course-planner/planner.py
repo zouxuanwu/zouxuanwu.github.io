@@ -1,7 +1,9 @@
 import json
 with open("courses.json") as f:
     courses = json.load(f)
+import itertools
 from itertools import combinations
+import heapq
 
 def check_requirements(requirements, taken_courses):
     if isinstance(requirements, str):
@@ -34,9 +36,9 @@ def interest_alignment(schedule, interest_profile):
     score = 0
     for course_name in schedule:
         topics = courses[course_name]["topics"]
-        for t in topics:
-            score += interest_profile.get(t, 0)
-    return score / len(schedule)
+        for t, weight in topics.items():
+            score += weight * interest_profile.get(t, 0)
+    return score / len(schedule) if schedule else 0
 
 def collect_topics(courses):
     all_topics = set()
@@ -60,28 +62,61 @@ def get_interest_profile(topics):
                 print("Invalid input. Enter a number.")
     return profile
     
-def score_schedule(courses, interest_profile, weights):
-    score = 0.0
-    for c in courses:
-        for t in c.get("topics", []):
-            score += interest_profile.get(t, 0) * weights["interest"]
-        score -= c["difficulty"] * weights["difficulty"]
-        score += c["professor_rating"] * weights["rating"]
-    return score
-    
-    eligible = [
-        c for c in courses
-        if prereqs_met(c, completed)
-    ]
-    
-    plans = []
-    for combo in combinations(eligible, course_count):
-        if valid_schedule(combo):
-            score = score_schedule(combo, interest_profile, weights)
-            plans.append((score, combo))
+def score_schedule(schedule, interest_profile, weights):
+    interest = interest_alignment(schedule, interest_profile)
 
-    plans.sort(reverse=True, key=lambda x: x[0])
-    return plans[:5]
+    avg_difficulty = sum(courses[c]["difficulty"] for c in schedule) / len(schedule)
+    avg_prof_rating = sum(courses[c]["professor_rating"] for c in schedule) / len(schedule)
+
+    return (
+        weights["interest"] * interest
+        - weights["difficulty"] * avg_difficulty
+        + weights["professor"] * avg_prof_rating
+    )
+    
+def get_weights():
+    return {
+        "interest": float(input("Weight for interest (e.g. 1.0): ")),
+        "difficulty": float(input("Weight for difficulty (e.g. 0.5): ")),
+        "professor": float(input("Weight for professor rating (e.g. 0.3): "))
+    }
+
+def generate_semester_plans(
+    completed_courses,
+    interest_profile,
+    term=None,
+    min_units=8,
+    max_units=12,
+    weights=None,
+    top_k=5
+):
+    if weights is None:
+        weights = get_weights()
+
+    available = [
+        c for c in courses
+        if c not in completed_courses
+        and prereqs_met(c, completed_courses)
+        and (term is None or offered_in_term(courses[c], term))
+    ]
+
+    heap = []
+
+    for r in range(1, len(available) + 1):
+        for schedule in itertools.combinations(available, r):
+            if not valid_schedule(schedule, min_units, max_units):
+                continue
+
+            score = score_schedule(schedule, interest_profile, weights)
+
+            heapq.heappush(heap, (score, schedule))
+            if len(heap) > top_k:
+                heapq.heappop(heap)
+
+    return [
+        {"courses": s, "score": sc}
+        for sc, s in sorted(heap, reverse=True)
+    ]
 
 # Example run
 
