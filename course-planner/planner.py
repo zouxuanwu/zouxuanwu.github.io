@@ -2,7 +2,7 @@ import json
 from itertools import combinations
 
 def load_courses():
-    with open("data/courses.json", "r") as f:
+    with open("courses.json", "r") as f:
         return json.load(f)
 
 courses = load_courses()
