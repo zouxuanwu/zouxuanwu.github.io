@@ -122,19 +122,18 @@ def generate_semester_plans(
 
 if __name__ == "__main__":
     completed_courses = []
-
     topics = collect_topics(courses)
     interest_profile = get_interest_profile(topics)
-
     top_plans = generate_semester_plans(
-        completed_courses,
-        interest_profile,
-        course_count=3,
+        completed_courses=completed_courses,
+        interest_profile=interest_profile,
+        min_units=8,
+        max_units=12,
     )
-
-    for i, (score, plan) in enumerate(top_plans, 1):
-        print(f"\nPlan {i} | Score: {round(score, 3)}")
-        for c in plan:
+    print("\nTop 5 Recommended Schedules:")
+    for i, plan in enumerate(top_plans[:5], 1):
+        print(f"\nPlan {i} | Score: {round(plan['score'], 3)}")
+        for c in plan["courses"]:
             print("  -", c)
 
 # test blocks
@@ -157,10 +156,21 @@ def test_valid_schedule():
 
 def test_generate_semester_plans():
     completed_courses = ["MATH 51", "PHYSICS 7A"]
-    interest_profile = {"genomics": 1, "statistics": 0.8}
-    plans = generate_semester_plans(completed_courses, interest_profile, course_count=2)
-    for score, plan in plans:
-        print(score, plan)
+    interest_profile = {
+        "statistics": 0.8,
+        "bioinformatics": 1.0,
+        "python": 0.6
+    }
+    plans = generate_semester_plans(
+        completed_courses=completed_courses,
+        interest_profile=interest_profile,
+        min_units=8,
+        max_units=12
+    )
+    print("\nGenerated plans:")
+    for plan in plans[:3]:
+        print("Score:", round(plan["score"], 3))
+        print("Courses:", plan["courses"])
 
 
 
