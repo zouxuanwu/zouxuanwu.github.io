@@ -1,7 +1,5 @@
-import json; d=json.load(open("courses.json")); json.dump({c.pop("course_id"): c for c in d}, open("courses.json","w"), indent=2)
+import json; courses = {c["course_id"]: {k:v for k,v in c.items() if k!="course_id"} for c in json.load(open("courses.json"))}
 from itertools import combinations
-
-courses = d
 
 def check_requirements(requirements, taken_courses):
     if isinstance(requirements, str):
