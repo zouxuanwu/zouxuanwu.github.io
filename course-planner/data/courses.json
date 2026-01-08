@@ -1,484 +1,943 @@
-[
-  {
-    "course_id": "DATA C8",
+{
+  "DATA C8": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 3.5,
     "difficulty": 3.1,
-    "topics": {"python": 0.5, "statistics": 0.5}
+    "topics": {
+      "python": 0.5,
+      "statistics": 0.5
+    }
   },
-  {
-    "course_id": "DATA C88C",
+  "DATA C88C": {
     "units": 3,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 4.3,
     "difficulty": 2.8,
-    "topics": {"python": 0.4, "algorithm": 0.3, "statistics": 0.3}
+    "topics": {
+      "python": 0.4,
+      "algorithm": 0.3,
+      "statistics": 0.3
+    }
   },
-  {
-    "course_id": "DATA C100",
+  "DATA C100": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["DATA C8", "STAT 20"]},
-        {"or": ["COMPSCI 61A", "DATA C88C", "ENGIN 7"]}
+        {
+          "or": [
+            "DATA C8",
+            "STAT 20"
+          ]
+        },
+        {
+          "or": [
+            "COMPSCI 61A",
+            "DATA C88C",
+            "ENGIN 7"
+          ]
+        }
       ]
     },
-    "corequisites": {"or": ["MATH 54", "MATH 56", "MATH 110", "EECS 16A", "PHYSICS 89"]},
+    "corequisites": {
+      "or": [
+        "MATH 54",
+        "MATH 56",
+        "MATH 110",
+        "EECS 16A",
+        "PHYSICS 89"
+      ]
+    },
     "professor_rating": 5.0,
     "difficulty": 2.8,
-    "topics": {"python": 0.4, "statistics": 0.4, "algorithm": 0.2}
+    "topics": {
+      "python": 0.4,
+      "statistics": 0.4,
+      "algorithm": 0.2
+    }
   },
-  {
-    "course_id": "DATA C101",
+  "DATA C101": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["COMPSCI 61B", "INFO 206B"]},
-        {"or": ["DATA C100", "COMPSCI 189", "INFO 251", "DATA 144"]}
+        {
+          "or": [
+            "COMPSCI 61B",
+            "INFO 206B"
+          ]
+        },
+        {
+          "or": [
+            "DATA C100",
+            "COMPSCI 189",
+            "INFO 251",
+            "DATA 144"
+          ]
+        }
       ]
     },
     "corequisites": null,
     "professor_rating": 3.8,
     "difficulty": 4.0,
-    "topics": {"statistics": 0.4, "algorithm": 0.4, "python": 0.2}
+    "topics": {
+      "statistics": 0.4,
+      "algorithm": 0.4,
+      "python": 0.2
+    }
   },
-  {
-    "course_id": "DATA C102",
+  "DATA C102": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["MATH 54", "MATH 56", "MATH 110", "STAT 89A", "PHYSICS 89", {"and": ["EECS 16A","EECS 16B"]}]},
+        {
+          "or": [
+            "MATH 54",
+            "MATH 56",
+            "MATH 110",
+            "STAT 89A",
+            "PHYSICS 89",
+            {
+              "and": [
+                "EECS 16A",
+                "EECS 16B"
+              ]
+            }
+          ]
+        },
         "DATA C100",
-        {"or": ["EECS 126", "DATA C140", "STAT 134", "IndEng 172", "MATH 106"]}
+        {
+          "or": [
+            "EECS 126",
+            "DATA C140",
+            "STAT 134",
+            "IndEng 172",
+            "MATH 106"
+          ]
+        }
       ]
     },
     "corequisites": null,
     "professor_rating": 4.3,
     "difficulty": 3.0,
-    "topics": {"statistics": 0.4, "math": 0.3, "algorithm": 0.3}
+    "topics": {
+      "statistics": 0.4,
+      "math": 0.3,
+      "algorithm": 0.3
+    }
   },
-  {
-    "course_id": "DATA C104",
+  "DATA C104": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 3.5,
     "difficulty": 2.9,
-    "topics": {"python": 0.6, "statistics": 0.4}
+    "topics": {
+      "python": 0.6,
+      "statistics": 0.4
+    }
   },
-  {
-    "course_id": "DATA 144",
+  "DATA 144": {
     "units": 3,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 1.7,
     "difficulty": 3.5,
-    "topics": {"statistics": 0.6, "python": 0.4}
+    "topics": {
+      "statistics": 0.6,
+      "python": 0.4
+    }
   },
-  {
-    "course_id": "DATA C140",
+  "DATA C140": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["DATA C8", "STAT 20"]},
-        {"or": ["COMPSCI 61A","DATA C88C"]},
-        {"and": ["MATH 51", "MATH 52"]}
+        {
+          "or": [
+            "DATA C8",
+            "STAT 20"
+          ]
+        },
+        {
+          "or": [
+            "COMPSCI 61A",
+            "DATA C88C"
+          ]
+        },
+        {
+          "and": [
+            "MATH 51",
+            "MATH 52"
+          ]
+        }
       ]
     },
-    "corequisites": {"or": ["MATH 54", "MATH 56", "EECS 16B", "MATH 110"]},
+    "corequisites": {
+      "or": [
+        "MATH 54",
+        "MATH 56",
+        "EECS 16B",
+        "MATH 110"
+      ]
+    },
     "professor_rating": 5.0,
     "difficulty": 3.0,
-    "topics": {"statistics": 0.5, "math": 0.4, "algorithm": 0.1}
+    "topics": {
+      "statistics": 0.5,
+      "math": 0.4,
+      "algorithm": 0.1
+    }
   },
-  {
-    "course_id": "COMPSCI 61A",
+  "COMPSCI 61A": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"or": ["MATH 10A", "MATH 16A"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "MATH 10A",
+        "MATH 16A"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 4.1,
     "difficulty": 3.3,
-    "topics": {"python": 0.6, "algorithm": 0.4}
+    "topics": {
+      "python": 0.6,
+      "algorithm": 0.4
+    }
   },
-  {
-    "course_id": "COMPSCI 61B",
+  "COMPSCI 61B": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"or": ["COMPSCI 61A", "COMPSCI 88", "ENGIN 7"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "COMPSCI 61A",
+        "COMPSCI 88",
+        "ENGIN 7"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 4.7,
     "difficulty": 3.6,
-    "topics": {"algorithm": 0.7, "python": 0.3}
+    "topics": {
+      "algorithm": 0.7,
+      "python": 0.3
+    }
   },
-  {
-    "course_id": "COMPSCI 61C",
+  "COMPSCI 61C": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["COMPSCI 61A", {"or": ["COMPSCI 61B","61BL"]}]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "COMPSCI 61A",
+        {
+          "or": [
+            "COMPSCI 61B",
+            "61BL"
+          ]
+        }
+      ]
+    },
     "corequisites": null,
     "professor_rating": 4.1,
     "difficulty": 3.3,
-    "topics": {"engineering": 0.5, "algorithm": 0.3, "physics": 0.2}
+    "topics": {
+      "engineering": 0.5,
+      "algorithm": 0.3,
+      "physics": 0.2
+    }
   },
-  {
-    "course_id": "COMPSCI 70",
+  "COMPSCI 70": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 4.7,
     "difficulty": 3.6,
-    "topics": {"math": 0.6, "algorithm": 0.4}
+    "topics": {
+      "math": 0.6,
+      "algorithm": 0.4
+    }
   },
-  {
-    "course_id": "COMPSCI 170",
+  "COMPSCI 170": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["COMPSCI 61B", "COMPSCI 70"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "COMPSCI 61B",
+        "COMPSCI 70"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 1.8,
     "difficulty": 4.3,
-    "topics": {"algorithm": 0.8, "engineering": 0.2}
+    "topics": {
+      "algorithm": 0.8,
+      "engineering": 0.2
+    }
   },
-  {
-    "course_id": "ENGIN 7",
+  "ENGIN 7": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
-    "corequisites": {"or": ["MATH 52"]},
+    "corequisites": {
+      "or": [
+        "MATH 52"
+      ]
+    },
     "professor_rating": 4.8,
     "difficulty": 3.1,
-    "topics": {"engineering": 0.5, "python": 0.3, "physics": 0.2}
+    "topics": {
+      "engineering": 0.5,
+      "python": 0.3,
+      "physics": 0.2
+    }
   },
-  {
-    "course_id": "MATH 51",
+  "MATH 51": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 2.1,
     "difficulty": 3.6,
-    "topics": {"math": 0.8, "physics": 0.2}
+    "topics": {
+      "math": 0.8,
+      "physics": 0.2
+    }
   },
-  {
-    "course_id": "MATH 52",
+  "MATH 52": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MATH 51",
     "corequisites": null,
     "professor_rating": 3.3,
     "difficulty": 3.6,
-    "topics": {"math": 0.8, "physics": 0.2}
+    "topics": {
+      "math": 0.8,
+      "physics": 0.2
+    }
   },
-  {
-    "course_id": "MATH 53",
+  "MATH 53": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MATH 52",
     "corequisites": null,
     "professor_rating": 3.3,
     "difficulty": 4.1,
-    "topics": {"math": 0.8, "physics": 0.2}
+    "topics": {
+      "math": 0.8,
+      "physics": 0.2
+    }
   },
-  {
-    "course_id": "MATH 54",
+  "MATH 54": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MATH 52",
     "corequisites": null,
     "professor_rating": 3.7,
     "difficulty": 3.4,
-    "topics": {"math": 0.7, "algorithm": 0.2, "python": 0.1}
+    "topics": {
+      "math": 0.7,
+      "algorithm": 0.2,
+      "python": 0.1
+    }
   },
-  {
-    "course_id": "MATH 55",
+  "MATH 55": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 4.3,
     "difficulty": 2.5,
-    "topics": {"math": 0.7, "algorithm": 0.3}
+    "topics": {
+      "math": 0.7,
+      "algorithm": 0.3
+    }
   },
-  {
-    "course_id": "MATH 56",
+  "MATH 56": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MATH 52",
     "corequisites": null,
     "professor_rating": 4.6,
     "difficulty": 3.3,
-    "topics": {"math": 0.8, "algorithm": 0.2}
+    "topics": {
+      "math": 0.8,
+      "algorithm": 0.2
+    }
   },
-  {
-    "course_id": "PHYSICS 7A",
+  "PHYSICS 7A": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["MATH 51","MATH 52"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "MATH 51",
+        "MATH 52"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 3.7,
     "difficulty": 3.1,
-    "topics": {"physics": 0.7, "math": 0.3}
+    "topics": {
+      "physics": 0.7,
+      "math": 0.3
+    }
   },
-  {
-    "course_id": "PHYSICS 7B",
+  "PHYSICS 7B": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["PHYSICS 7A", "MATH 51", "MATH 52"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "PHYSICS 7A",
+        "MATH 51",
+        "MATH 52"
+      ]
+    },
     "corequisites": "MATH 53",
     "professor_rating": 3.7,
     "difficulty": 3.1,
-    "topics": {"physics": 0.6, "math": 0.4}
+    "topics": {
+      "physics": 0.6,
+      "math": 0.4
+    }
   },
-  {
-    "course_id": "PHYSICS 8A",
+  "PHYSICS 8A": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MATH 51",
     "corequisites": null,
     "professor_rating": 3.8,
     "difficulty": 3.7,
-    "topics": {"physics": 0.6, "math": 0.4}
+    "topics": {
+      "physics": 0.6,
+      "math": 0.4
+    }
   },
-  {
-    "course_id": "PHYSICS 8B",
+  "PHYSICS 8B": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "PHYSICS 8A",
     "corequisites": null,
     "professor_rating": 4.8,
     "difficulty": 3.0,
-    "topics": {"physics": 0.7, "math": 0.3}
+    "topics": {
+      "physics": 0.7,
+      "math": 0.3
+    }
   },
-  {
-    "course_id": "CHEM 1A & CHEM 1AL",
+  "CHEM 1A & CHEM 1AL": {
     "units": 6,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 2.9,
     "difficulty": 3.9,
-    "topics": {"biochemistry": 0.6, "lab": 0.4}
+    "topics": {
+      "biochemistry": 0.6,
+      "lab": 0.4
+    }
   },
-  {
-    "course_id": "CHEM 3A & CHEM 3AL",
+  "CHEM 3A & CHEM 3AL": {
     "units": 6,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "CHEM 1A",
     "corequisites": null,
     "professor_rating": 3.7,
     "difficulty": 3.9,
-    "topics": {"biochemistry": 0.6, "lab": 0.4}
+    "topics": {
+      "biochemistry": 0.6,
+      "lab": 0.4
+    }
   },
-  {
-    "course_id": "BIOLOGY 1A & BIOLOGY 1AL",
+  "BIOLOGY 1A & BIOLOGY 1AL": {
     "units": 5,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"or": ["CHEM 1A", "CHEM 4A"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "CHEM 1A",
+        "CHEM 4A"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 2.4,
     "difficulty": 4.4,
-    "topics": {"genetics": 0.4, "lab": 0.6}
+    "topics": {
+      "genetics": 0.4,
+      "lab": 0.6
+    }
   },
-  {
-    "course_id": "BIOLOGY 1B",
+  "BIOLOGY 1B": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 4.9,
     "difficulty": 2.7,
-    "topics": {"genetics": 0.5, "biochemistry": 0.5}
+    "topics": {
+      "genetics": 0.5,
+      "biochemistry": 0.5
+    }
   },
-  {
-    "course_id": "MCELLBI C100A",
+  "MCELLBI C100A": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 2.6,
     "difficulty": 3.5,
-    "topics": {"biochemistry": 0.7, "genetics": 0.3}
+    "topics": {
+      "biochemistry": 0.7,
+      "genetics": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI 100B",
+  "MCELLBI 100B": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"or": ["MCELLBI C100A", "CHEM C130"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "MCELLBI C100A",
+        "CHEM C130"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 4.7,
     "difficulty": 2.3,
-    "topics": {"biochemistry": 0.6, "genetics": 0.4}
+    "topics": {
+      "biochemistry": 0.6,
+      "genetics": 0.4
+    }
   },
-  {
-    "course_id": "MCELLBI 102",
+  "MCELLBI 102": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["BIOLOGY 1A", "CHEM 3B"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "BIOLOGY 1A",
+        "CHEM 3B"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 2.5,
     "difficulty": 4.0,
-    "topics": {"biochemistry": 0.5, "genetics": 0.4, "lab": 0.3}
+    "topics": {
+      "biochemistry": 0.5,
+      "genetics": 0.4,
+      "lab": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI 104",
+  "MCELLBI 104": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "BIOLOGY 1A",
     "corequisites": null,
     "professor_rating": 4.3,
     "difficulty": 2.8,
-    "topics": {"genetics": 0.6, "bioinformatics": 0.2, "statistics": 0.2}
+    "topics": {
+      "genetics": 0.6,
+      "bioinformatics": 0.2,
+      "statistics": 0.2
+    }
   },
-  {
-    "course_id": "MCELLBI C112 & MCELLBI C112L",
+  "MCELLBI C112 & MCELLBI C112L": {
     "units": 7,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["BIOLOGY 1A", "BIOLOGY 1B"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "BIOLOGY 1A",
+        "BIOLOGY 1B"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 2.4,
     "difficulty": 3.9,
-    "topics": {"biochemistry": 0.6, "lab": 0.6, "genetics": 0.3}
+    "topics": {
+      "biochemistry": 0.6,
+      "lab": 0.6,
+      "genetics": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI 132",
+  "MCELLBI 132": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["BIOLOGY 1A", "BIOLOGY 1AL", "BIOLOGY 1B", "MCELLBI 102"]},
-    "corequisites": {"or": ["MCELLBI 110", "MCELLBI 104"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "BIOLOGY 1A",
+        "BIOLOGY 1AL",
+        "BIOLOGY 1B",
+        "MCELLBI 102"
+      ]
+    },
+    "corequisites": {
+      "or": [
+        "MCELLBI 110",
+        "MCELLBI 104"
+      ]
+    },
     "professor_rating": 4.0,
     "difficulty": 2.9,
-    "topics": {"biochemistry": 0.5, "lab": 0.4, "bioinformatics": 0.2}
+    "topics": {
+      "biochemistry": 0.5,
+      "lab": 0.4,
+      "bioinformatics": 0.2
+    }
   },
-  {
-    "course_id": "MCELLBI 110",
+  "MCELLBI 110": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MCELLBI C100A",
     "corequisites": null,
     "professor_rating": 4.3,
     "difficulty": 3.4,
-    "topics": {"biochemistry": 0.6, "genetics": 0.3, "statistics": 0.2}
+    "topics": {
+      "biochemistry": 0.6,
+      "genetics": 0.3,
+      "statistics": 0.2
+    }
   },
-  {
-    "course_id": "MCELLBI 140 & MCELLBI 140L",
+  "MCELLBI 140 & MCELLBI 140L": {
     "units": 8,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"and": ["BIOLOGY 1A", "BIOLOGY 1AL"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "and": [
+        "BIOLOGY 1A",
+        "BIOLOGY 1AL"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 4.0,
     "difficulty": 3.8,
-    "topics": {"lab": 0.7, "biochemistry": 0.5, "engineering": 0.2}
+    "topics": {
+      "lab": 0.7,
+      "biochemistry": 0.5,
+      "engineering": 0.2
+    }
   },
-  {
-    "course_id": "MCELLBI 141",
+  "MCELLBI 141": {
     "units": 4,
-    "terms_offered": ["Spring"],
+    "terms_offered": [
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["MCELLBI 102", "MCELLBI C100A"]},
-        {"and": ["BIOLOGY 1A", "BIOLOGY 1AL", "BIOLOGY 1B"]}
+        {
+          "or": [
+            "MCELLBI 102",
+            "MCELLBI C100A"
+          ]
+        },
+        {
+          "and": [
+            "BIOLOGY 1A",
+            "BIOLOGY 1AL",
+            "BIOLOGY 1B"
+          ]
+        }
       ]
     },
     "corequisites": null,
     "professor_rating": 3.8,
     "difficulty": 3.5,
-    "topics": {"genetics": 0.5, "biochemistry": 0.4, "lab": 0.3}
+    "topics": {
+      "genetics": 0.5,
+      "biochemistry": 0.4,
+      "lab": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI C148",
+  "MCELLBI C148": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"or": ["MCELLBI C100A", "CHEM C130", "MCELLBI 102"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "MCELLBI C100A",
+        "CHEM C130",
+        "MCELLBI 102"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 5.0,
     "difficulty": 3.0,
-    "topics": {"bioinformatics": 0.6, "statistics": 0.4, "python": 0.3}
+    "topics": {
+      "bioinformatics": 0.6,
+      "statistics": 0.4,
+      "python": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI 149",
+  "MCELLBI 149": {
     "units": 3,
-    "terms_offered": ["Fall"],
-    "prerequisites": {"or": [{"and": ["MCELLBI 110", "MCELLBI 140"]}, "MCELLBI 104"]},
+    "terms_offered": [
+      "Fall"
+    ],
+    "prerequisites": {
+      "or": [
+        {
+          "and": [
+            "MCELLBI 110",
+            "MCELLBI 140"
+          ]
+        },
+        "MCELLBI 104"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 3.2,
     "difficulty": 3.8,
-    "topics": {"lab": 0.6, "biochemistry": 0.4}
+    "topics": {
+      "lab": 0.6,
+      "biochemistry": 0.4
+    }
   },
-  {
-    "course_id": "MCELLBI 150 & MCELLBI 150L",
+  "MCELLBI 150 & MCELLBI 150L": {
     "units": 8,
-    "terms_offered": ["Fall", "Spring"],
-    "prerequisites": {"or": ["MCELLBI C100A", "CHEM C130", "MCELLBI 102"]},
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "MCELLBI C100A",
+        "CHEM C130",
+        "MCELLBI 102"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 4.3,
     "difficulty": 3.3,
-    "topics": {"lab": 0.7, "biochemistry": 0.5, "engineering": 0.3}
+    "topics": {
+      "lab": 0.7,
+      "biochemistry": 0.5,
+      "engineering": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI 153",
+  "MCELLBI 153": {
     "units": 4,
-    "terms_offered": ["Fall"],
-    "prerequisites": {"or": [{"and": ["BIOLOGY 1A", "MCELLBI 102"]}, "MCELLBI C100A", "CHEM 135"]},
+    "terms_offered": [
+      "Fall"
+    ],
+    "prerequisites": {
+      "or": [
+        {
+          "and": [
+            "BIOLOGY 1A",
+            "MCELLBI 102"
+          ]
+        },
+        "MCELLBI C100A",
+        "CHEM 135"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 5.0,
     "difficulty": 4.0,
-    "topics": {"bioinformatics": 0.6, "statistics": 0.4, "python": 0.3}
+    "topics": {
+      "bioinformatics": 0.6,
+      "statistics": 0.4,
+      "python": 0.3
+    }
   },
-  {
-    "course_id": "MCELLBI 153L",
+  "MCELLBI 153L": {
     "units": 4,
-    "terms_offered": ["Spring"],
-    "prerequisites": {"or": ["MCELLBI 102", "MCELLBI C100A", "CHEM C130"]},
+    "terms_offered": [
+      "Spring"
+    ],
+    "prerequisites": {
+      "or": [
+        "MCELLBI 102",
+        "MCELLBI C100A",
+        "CHEM C130"
+      ]
+    },
     "corequisites": null,
     "professor_rating": 5.0,
     "difficulty": 4.0,
-    "topics": {"lab": 0.7, "bioinformatics": 0.4}
+    "topics": {
+      "lab": 0.7,
+      "bioinformatics": 0.4
+    }
   },
-  {
-    "course_id": "BIOENG C131",
+  "BIOENG C131": {
     "units": 4,
-    "terms_offered": ["Fall"],
-    "prerequisites": {"or": ["ENGIN 7", "COMPSCI 61A"]},
-    "corequisites": {"or": ["BIOENG 11", "BIOLOGY 1A"]},
+    "terms_offered": [
+      "Fall"
+    ],
+    "prerequisites": {
+      "or": [
+        "ENGIN 7",
+        "COMPSCI 61A"
+      ]
+    },
+    "corequisites": {
+      "or": [
+        "BIOENG 11",
+        "BIOLOGY 1A"
+      ]
+    },
     "professor_rating": 1.9,
     "difficulty": 4.1,
-    "topics": {"engineering": 0.6, "algorithm": 0.4, "python": 0.3}
+    "topics": {
+      "engineering": 0.6,
+      "algorithm": 0.4,
+      "python": 0.3
+    }
   },
-  {
-    "course_id": "BIOENG C142",
+  "BIOENG C142": {
     "units": 4,
-    "terms_offered": ["Spring"],
+    "terms_offered": [
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
         "MATH 53",
         "MATH 54",
-        {"or": ["CHEM 120A", "CHEM 120B", "BIOENG 103"]}
+        {
+          "or": [
+            "CHEM 120A",
+            "CHEM 120B",
+            "BIOENG 103"
+          ]
+        }
       ]
     },
     "corequisites": null,
     "professor_rating": 2.5,
     "difficulty": 3.8,
-    "topics": {"engineering": 0.6, "physics": 0.4, "math": 0.3}
+    "topics": {
+      "engineering": 0.6,
+      "physics": 0.4,
+      "math": 0.3
+    }
   },
-  {
-    "course_id": "BIOENG 145",
+  "BIOENG 145": {
     "units": 4,
-    "terms_offered": ["Spring"],
+    "terms_offered": [
+      "Spring"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["BIOLOGY 1A", "BIOENG 11"]},
+        {
+          "or": [
+            "BIOLOGY 1A",
+            "BIOENG 11"
+          ]
+        },
         "MATH 54",
         "COMPSCI 61B"
       ]
@@ -486,29 +945,54 @@
     "corequisites": null,
     "professor_rating": 3.1,
     "difficulty": 3.1,
-    "topics": {"algorithm": 0.5, "bioinformatics": 0.4, "python": 0.3}
+    "topics": {
+      "algorithm": 0.5,
+      "bioinformatics": 0.4,
+      "python": 0.3
+    }
   },
-  {
-    "course_id": "BIOENG C149",
+  "BIOENG C149": {
     "units": 4,
-    "terms_offered": ["Fall"],
+    "terms_offered": [
+      "Fall"
+    ],
     "prerequisites": {
       "and": [
-        {"or": ["MATH 54", {"or": ["EECS 16A", "EECS 16B"]}]},
+        {
+          "or": [
+            "MATH 54",
+            {
+              "or": [
+                "EECS 16A",
+                "EECS 16B"
+              ]
+            }
+          ]
+        },
         "COMPSCI 61A",
-        {"or": ["BIOENG 11", "BIOLOGY 1A"]},
+        {
+          "or": [
+            "BIOENG 11",
+            "BIOLOGY 1A"
+          ]
+        },
         "BIOENG C131"
       ]
     },
     "corequisites": null,
     "professor_rating": 3.1,
     "difficulty": 3.1,
-    "topics": {"engineering": 0.5, "algorithm": 0.4, "statistics": 0.3}
+    "topics": {
+      "engineering": 0.5,
+      "algorithm": 0.4,
+      "statistics": 0.3
+    }
   },
-  {
-    "course_id": "BIOENG 103",
+  "BIOENG 103": {
     "units": 4,
-    "terms_offered": ["Fall"],
+    "terms_offered": [
+      "Fall"
+    ],
     "prerequisites": {
       "and": [
         "PHYSICS 7A",
@@ -517,42 +1001,67 @@
         "MATH 52",
         "MATH 53",
         "MATH 54",
-        {"or": ["BIOLOGY 1A", "BIOENG 11"]}
+        {
+          "or": [
+            "BIOLOGY 1A",
+            "BIOENG 11"
+          ]
+        }
       ]
     },
     "corequisites": null,
     "professor_rating": 2.7,
     "difficulty": 3.7,
-    "topics": {"physics": 0.5, "engineering": 0.4, "math": 0.3}
+    "topics": {
+      "physics": 0.5,
+      "engineering": 0.4,
+      "math": 0.3
+    }
   },
-  {
-    "course_id": "STAT 20",
+  "STAT 20": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": "MATH 51",
     "corequisites": null,
     "professor_rating": 3.5,
     "difficulty": 3.1,
-    "topics": {"statistics": 0.7, "probability": 0.3}
+    "topics": {
+      "statistics": 0.7,
+      "probability": 0.3
+    }
   },
-  {
-    "course_id": "STAT 133",
+  "STAT 133": {
     "units": 3,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 3.0,
     "difficulty": 3.0,
-    "topics": {"statistics": 0.6, "data_analysis": 0.4}
+    "topics": {
+      "statistics": 0.6,
+      "data_analysis": 0.4
+    }
   },
-  {
-    "course_id": "STAT 134",
+  "STAT 134": {
     "units": 4,
-    "terms_offered": ["Fall", "Spring"],
+    "terms_offered": [
+      "Fall",
+      "Spring"
+    ],
     "prerequisites": null,
     "corequisites": null,
     "professor_rating": 2.4,
     "difficulty": 3.9,
-    "topics": {"statistics": 0.5, "regression": 0.3, "probability": 0.2}
+    "topics": {
+      "statistics": 0.5,
+      "regression": 0.3,
+      "probability": 0.2
+    }
   }
-]
+}
