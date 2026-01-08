@@ -1,1 +1,41 @@
+Rate your interest in the following topics from 0 to 1 (e.g., 0.8):
+data_analysis: 0.5
+algorithm: 0.6
+biochemistry: 0.3
+bioinformatics: 0.8
+physics: 0.2
+lab: 0.3
+regression: 0.3
+statistics: 0.3
+python: 0.7
+probability: 0.6
+math: 0.6
+engineering: 0.4
+genetics: 0.6
+Weight for interest (e.g. 1.0): 0.4
+Weight for difficulty (e.g. 0.5): 0.3
+Weight for professor rating (e.g. 0.3): 0.3
 
+Top 5 Recommended Schedules:
+
+Plan 1 | Score: 0.81
+  - MATH 55
+  - BIOLOGY 1B
+
+Plan 2 | Score: 0.77
+  - ENGIN 7
+  - MATH 55
+  - BIOLOGY 1B
+
+Plan 3 | Score: 0.765
+  - ENGIN 7
+  - BIOLOGY 1B
+
+Plan 4 | Score: 0.763
+  - DATA C88C
+  - MATH 55
+  - BIOLOGY 1B
+
+Plan 5 | Score: 0.735
+  - ENGIN 7
+  - MATH 55
