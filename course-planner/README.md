@@ -8,7 +8,7 @@ The project combines constraint satisfaction, preference modeling, and semantic 
 
 University course planning is a complex decision problem involving:
 - prerequisite constraints
-- time conflicts and unit limits
+- unit limits
 - major and breadth requirements
 - workload balance
 - long-term academic and career goals
@@ -36,7 +36,7 @@ coursepath/README.md
 
 - Semester-level course combination generation
 - Prerequisite checking
-- Unit and time conflict validation
+- Unit validation
 - Interest-aware scoring
 - Ranked schedule recommendations
 
@@ -56,7 +56,7 @@ Each course combination is scored using a weighted linear model:
 
 Score = w1 · interest_alignment + w2 · teaching_quality + w3 · course difficulty
 
-Weights are adjustable and designed to be interpretable rather than opaque.
+Weights are adjustable and designed to be interpretable.
 
 # Building Weighted Topic Representation and Interest Profile
 
